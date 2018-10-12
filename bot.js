@@ -200,12 +200,3 @@ message.guild.members.forEach(m => {
 });
 
 
-
-
-client.on("ready", () => {
-    client.user.setGame("on " + client.users.size + " users")
-}).on("guildCreate", () => {
-    client.user.setGame("on " + client.users.size + " users")
-}).on("guildDelete", () => {
-    client.user.setGame("on " + client.users.size + " users")
-})
