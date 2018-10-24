@@ -17,17 +17,9 @@ client.login(process.env.BOT_TOKEN)
 
 client.on('ready',  () => {
             console.log(`online`);
-    client.user.setGame("watching you", "https://www.twitch.tv/idkg");
+    client.user.setGame("OnLiNe", "https://www.twitch.tv/idkg");
 });  
 
-
-
-client.on("ready", () => {
-  function lol() {
-    client.guilds.get('470608370445975552').roles.find("name", "{th} owner").setColor("RANDOM");
-  };
-  setInterval(lol, 10000);
-});
 
 
 
