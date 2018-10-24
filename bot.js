@@ -227,7 +227,6 @@ client.on("message", (message) => {
             c.send({
                 embed: embed
             });
-        }).catch(console.error);
     }
  
  
@@ -310,7 +309,6 @@ client.on("message", (message) => {
             c.send({
                 embed: embed
             });
-        }).catch(console.error);
     }
  
   
