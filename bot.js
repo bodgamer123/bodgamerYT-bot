@@ -166,7 +166,7 @@ message.author.send(`**مدة الرابط : يـوم
 
   
   client.on('message' , message => {
-var prefix = "$";
+var prefix = "!";
     if (message.content.startsWith(prefix + "shutdown")) {
         if (message.member.roles.some(r=>["{th} owner"].includes(r.name)) ) {
                      message.channel.sendMessage("**:** ***Currently Shutting down...*** ")
@@ -227,6 +227,7 @@ client.on("message", (message) => {
             c.send({
                 embed: embed
             });
+        }).catch(console.error);
     }
  
  
@@ -254,5 +255,3 @@ client.on("message", (message) => {
 });
  
 client.login(process.env.BOT_TOKEN)
-
-
