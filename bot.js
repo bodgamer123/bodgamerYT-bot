@@ -276,13 +276,3 @@ client.on('message', function(msg) {
       msg.channel.send({embed:embed});
     }
   });
-
-
-
-  
-client.on('message', message =>{
-  if(message.content.startsWith('$join')){
-    const voiceChannel = message.member.voiceChannel
-    voiceChannel.join();
-    message.channel.send("تم الأتصال بالروم الصوتي")
-}})
