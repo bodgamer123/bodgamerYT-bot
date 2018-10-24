@@ -69,7 +69,7 @@ client.on('message', message => {
 
        .setColor('RANDOM')
 
-         .setTitle('لي دخول السيرفر اضغط هنا')
+         .setTitle('click for join server')
        
        .setURL('https://discord.gg/dsehacD')
 
